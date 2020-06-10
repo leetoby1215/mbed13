@@ -21,17 +21,17 @@ def get():
         k3 = inkey()
         if k3=='A':
             print ("up")
-            s.write("/goStraight/run 100 \n".encode())
+            s.write("/goStraight/run 20 \n".encode())
         if k3=='B':
             print ("down")
-            s.write("/goStraight/run -100 \n".encode())
+            s.write("/goStraight/run -20 \n".encode())
         if k3=='C':
             print ("right")
-            s.write("/turn/run 100 -0.3 \n".encode())
+            s.write("/turn/run 20 -0.3 \n".encode())
         if k3=='D':
             print ("left")
-            s.write("/turn/run 100 0.3 \n".encode())
-        time.sleep(1)
+            s.write("/turn/run 20 0.3 \n".encode())
+        time.sleep(0.2)
         s.write("/stop/run \n".encode())
     elif k=='q':
         print ("quit")
